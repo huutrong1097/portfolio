@@ -1,0 +1,171 @@
+{% load static %}
+<!-- =========================PORTFOLIO========================= -->
+<section class="portfolio section" id="portfolio"> 
+    <h2 class="section__title">Portfolio</h2>
+    <span class="section__subtitle">Most recent work</span>
+
+    <div class="portfolio__container container swiper-container">
+        <div class="swiper-wrapper">
+            <!-- =========================PORTFOLIO 1========================= -->
+            <div class="portfolio__content grid swiper-slide">
+                <img src="{% static 'img/portfolio1.jpg' %}" alt="" class="portfolio__img">
+            
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">Modern Website</h3>
+                    <p class="portfolio__description">Website adaptable to all devices, with ui component 
+                        and animated interactions</p>
+                    <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+             <!-- =========================PORTFOLIO 2========================= -->
+             <div class="portfolio__content grid swiper-slide">
+                <img src="{% static 'img/portfolio2.jpg' %}" alt="" class="portfolio__img">
+            
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">Modern Website</h3>
+                    <p class="portfolio__description">Website adaptable to all devices, with ui component 
+                        and animated interactions</p>
+                    <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+
+             <!-- =========================PORTFOLIO 3========================= -->
+             <div class="portfolio__content grid swiper-slide">
+                <img src="{% static 'img/portfolio3.jpg' %}" alt="" class="portfolio__img">
+            
+                <div class="portfolio__data">
+                    <h3 class="portfolio__title">Online Store</h3>
+                    <p class="portfolio__description">Website adaptable to all devices, with ui component 
+                        and animated interactions</p>
+                    <a href="#" class="button button--flex button--small portfolio__button">
+                        Demo
+                        <i class="uil uil-arrow-right button__icon"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Add arrows -->
+        <div class="swiper-button-next">
+            <i class="uil uil-angle-right-b swiper-portfolio-icon"></i>
+        </div>
+        <div class="swiper-button-prev">
+            <i class="uil uil-angle-left-b swiper-portfolio-icon"></i>
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+    </div>
+</section>
+
+<!-- =========================PROJECT IN MIND========================= -->
+<section class="project section"> 
+    <div class="project__bg">
+        <div class="project__container container grid">
+            <div class="project__data">
+                <h2 class="project__title">You have a new project</h2>
+                <p class="project__description">Contact me new and get a 30% discount on your new project.</p>
+                
+                <a href="#contact" class="button button--flex button--white">
+                    Contact me
+                    <i class="uil uil-message project__icon button__icon"></i>
+                </a>
+            </div>
+
+            <img src="{% static 'img/project.png' %}" alt="" class="project__img">
+
+        </div>
+    </div>
+</section>
+
+<!-- =========================TESTIMONIAL========================= -->
+<section class="testimonial section">
+    <h2 class="section__title">Testimonial</h2>
+    <span class="section__subtitle">My client saying</span>
+    
+    <div class="testimonial__container container swiper-container">
+        <div class="swiper-wrapper">
+            <!-- =========================TESTIMONIAL 1========================= -->
+            <div class="testimonial__content swiper-slide">
+                <div class="testimonial__data">
+                    <div class="testimonial__header">
+                        <img src="{% static 'img/testimonial1.jpg' %}" alt="" class="testimonial__img">
+                        
+                        <div>
+                            <h3 class="testimonial__name">Sara Smith</h3>
+                            <span class="testimonial__client">Client</span>
+                        
+                        </div>
+                    </div>
+
+                    <div>
+                        <i class="uil uil-star testimonial__icon-star"></i>
+                        <i class="uil uil-star testimonial__icon-star"></i>
+                        <i class="uil uil-star testimonial__icon-star"></i>
+                        <i class="uil uil-star testimonial__icon-star"></i>
+                        <i class="uil uil-star testimonial__icon-star"></i>
+                    </div>
+                </div>
+                <p class="testimonial__description">I get a good impresstion, I carry out my project width all the possible quality and attention support 24 hours a day.</p>
+            </div>
+
+            <!-- =========================TESTIMONIAL 2========================= -->
+            <div class="testimonial__content swiper-slide">
+                <div class="testimonial__data">
+                    <div class="testimonial__header">
+                        <img src="{% static 'img/testimonial2.jpg' %}" alt="" class="testimonial__img">
+                        
+                        <div>
+                            <h3 class="testimonial__name">Sara Smith</h3>
+                            <span class="testimonial__client">Client</span>
+                        
+                        </div>
+                    </div>
+
+                    <div>
+                        <i class="uil uil-star testimonial__icon-star"></i>
+                        <i class="uil uil-star testimonial__icon-star"></i>
+                        <i class="uil uil-star testimonial__icon-star"></i>
+                        <i class="uil uil-star testimonial__icon-star"></i>
+                        <i class="uil uil-star testimonial__icon-star"></i>
+                    </div>
+                </div>
+                <p class="testimonial__description">I get a good impresstion, I carry out my project width all the possible quality and attention support 24 hours a day.</p>
+            </div>
+
+            <!-- =========================TESTIMONIAL 3========================= -->
+            <div class="testimonial__content swiper-slide">
+                <div class="testimonial__data">
+                    <div class="testimonial__header">
+                        <img src="{% static 'img/testimonial3.jpg' %}" alt="" class="testimonial__img">
+                        
+                        <div>
+                            <h3 class="testimonial__name">Sara Smith</h3>
+                            <span class="testimonial__client">Client</span>
+                        
+                        </div>
+                    </div>
+
+                    <div>
+                        <i class="uil uil-star testimonial__icon-star"></i>
+                        <i class="uil uil-star testimonial__icon-star"></i>
+                        <i class="uil uil-star testimonial__icon-star"></i>
+                        <i class="uil uil-star testimonial__icon-star"></i>
+                        <i class="uil uil-star testimonial__icon-star"></i>
+                    </div>
+                </div>
+                <p class="testimonial__description">I get a good impresstion, I carry out my project width all the possible quality and attention support 24 hours a day.</p>
+            </div>
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination swiper-pagination-testimonial"></div>
+    </div>
+</section>

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}My Resume{% endblock %}
+{% block content %}
+    {% include 'personal/about.html' %}
+    {% include 'personal/skills.html' %}
+    {% include 'personal/qualification.html' %}
+    {% include 'personal/services.html' %}
+    {% include 'personal/project.html' %}
+    {% include 'personal/contact.html' %}
+
+    <script>
+        const skill_percentage = document.getElementsByClassName("skills__number")
+        const skill_html = document.getElementsByClassName('skills__html')
+    </script>
+{% endblock %}

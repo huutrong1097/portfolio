@@ -1,0 +1,36 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %}</title>
+    <!-- =============================UNICONS========================== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- =============================SWIPER CSS========================= -->
+    <link rel="stylesheet" href="{% static 'css/swiper-bundle.min.css' %}">
+    <!-- =============================CSS============================== -->
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+
+</head>
+<body>
+    <header class="header" id="header">
+        {% include 'navbar.html' %}
+    </header>
+
+    <main class="main">
+        {% block content %}
+        {% endblock %}
+    </main>
+    
+    <footer class="footer" id="footer">
+        {% include 'footer.html' %}
+    </footer>
+    
+    <script src="{% static 'jss/swiper-bundle.min.js' %}"></script>
+    <script src="{% static 'jss/main.js' %}"></script>
+    
+</body>
+</html>
