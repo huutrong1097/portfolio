@@ -16,17 +16,21 @@ def index(request):
     if request.method == 'POST':
         form = ContactForm(request.POST)
         if form.is_valid():
+            
             user_name = form.cleaned_data['user_name']
             email = form.cleaned_data['email']
-            company = form.cleaned_data['email']
+            company = form.cleaned_data['company']
             message = form.cleaned_data['message']
 
-            recipient_list = ['huutrong1097@gmail.com']
-            send_mail(user_name , message, email, recipient_list)
-            form.save()
-            return messages.success(request, 'Your information is sent to candidate!')
+            #recipient_list = ['huutrong1097@gmail.com']
+            #send_mail(user_name , message, email, recipient_list)
+            insert_contact = Contact(name=user_name, email=email, company=company, message=message)
+            insert_contact.save()
+            messages.success(request, 'Your information is sent to candidate!')
+            return redirect('/')
         else:
-            return messages.error(request, 'Your information is not sent to candidate. Please check again!')
+            messages.error(request, 'Your information is not sent to candidate. Please check again!')
+            return redirect('/')
     else:
         form = ContactForm()
         about_me = About.objects.get(name__icontains= 'trong')

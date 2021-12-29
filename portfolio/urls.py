@@ -25,6 +25,7 @@ admin.site.index_title = 'My Resume Administration'
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('personal.urls', namespace='personal')),
+    path('api/v1/', include('personal.api.urls', namespace='api')),
     path('__debug__/', include(debug_toolbar.urls)),
 ]
 

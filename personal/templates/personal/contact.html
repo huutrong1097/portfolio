@@ -32,28 +32,32 @@
             </div>
         </div>
 
-        <form action="" class="contact__form grid">
+        <form action="" class="contact__form grid" method="POST">
             {% csrf_token %}
             <div class="contact__inputs grid">
                 <div class="contact__content">
                     <label for="" class="contact__label">Name</label>
-                    <input type="text" class="contact__input" {% if form.is_bound %}value="{{ form.user_name.value }}"{% endif %}>
+                    {{form.user_name}}
+                    <!-- <input type="text" class="contact__input" {% if form.is_bound %}value="{{ form.user_name.value }}"{% endif %} required> -->
                 </div>
 
                 <div class="contact__content">
                     <label for="" class="contact__label">Email</label>
-                    <input type="email" class="contact__input">
+                    {{form.email}}
+                    <!-- <input type="email" class="contact__input"> -->
                 </div>
             </div>
 
             <div class="contact__content">
                 <label for="" class="contact__label">Project</label>
-                <input type="text" class="contact__input">
+                {{form.company}}
+                <!-- <input type="text" class="contact__input"> -->
             </div>
 
             <div class="contact__content">
                 <label for="" class="contact__label">Message</label>
-                <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea>
+                {{form.message}}
+                <!-- <textarea name="" id="" cols="0" rows="7" class="contact__input"></textarea> -->
             </div>
 
             <div>
