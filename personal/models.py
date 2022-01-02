@@ -24,11 +24,11 @@ class Skill(models.Model):
     title = models.CharField(max_length=50, blank=False, null=False)
     year_of_experience = models.SmallIntegerField()
 
-    def __str__(self) -> str:
+    def __str__(self) -> str: # annotation
         return self.title
 
 class SubSkill(models.Model):
-    title = models.ForeignKey(Skill, related_name='sub_skill', on_delete=models.CASCADE)
+    title = models.ForeignKey(Skill, related_name='subskill', on_delete=models.CASCADE)
     skill = models.CharField(max_length=30, blank=False, null=False)
     percentage = models.PositiveIntegerField(default=1, validators=[MinValueValidator(1), MaxValueValidator(100)])
     

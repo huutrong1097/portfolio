@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'personal.apps.PersonalConfig',
+    'chat',
     'ckeditor',
     'debug_toolbar',
     'rest_framework',
